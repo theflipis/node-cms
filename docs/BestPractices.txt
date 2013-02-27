@@ -1,0 +1,21 @@
+http://stackoverflow.com/questions/310870/use-of-prototype-vs-this-in-javascript
+
+Esto es especialmente interesante:
+
+var A = function() {
+	this.cosa = function() {
+		// Haz cosas...
+	}
+}
+
+vs 
+
+var A = new function() {
+	this.cosa = function() {
+		// Haz cosas...
+	}
+}
+
+porque, en el primer ejemplo, el this es A, mientras
+que en el segundo ejemplo, el this es de cualquier objeto
+que implemente este prototipo (new A())
