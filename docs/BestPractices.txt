@@ -19,3 +19,12 @@ var A = new function() {
 porque, en el primer ejemplo, el this es A, mientras
 que en el segundo ejemplo, el this es de cualquier objeto
 que implemente este prototipo (new A())
+
+Importante:
+
+Cuando usamos herencia por prototipos, las propiedades prototipales
+pertenecen a la "clase base", de tal forma que al alterar su valor,
+todos los hijos lo alteran.
+
+Hacer una función extends() o implementar un constructo del lenguaje
+que haga la funcionalidad de extensión
