@@ -143,4 +143,6 @@ Base = Base.extend({
 	toString : function() {
 		return String(this.valueOf());
 	}
-}); 
+});
+
+module.exports.Base = Base;
